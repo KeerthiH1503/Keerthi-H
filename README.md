@@ -58,7 +58,7 @@ Passionate about coding and building real-world solutions with Python, Java, and
 
 ## 📊 GitHub stats
 
-![Keerthi's GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=default&hide_border=true)
+![Keerthi's GitHub stats](https://github-readme-stats.vercel.app/api?username=Keerthi-H&show_icons=true&theme=default&hide_border=true)
 
 ---
 
