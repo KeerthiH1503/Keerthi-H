@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keerthi H | Software Developer & Java Engineer</title>
+  <meta name="description" content="Portfolio of Keerthi H — B.Tech CS Engineering student passionate about Software Development, Java, and building real-world applications." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-bracket">&lt;</span>KH<span class="brand-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#certifications" class="nav-link" data-section="certifications">Certs</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag animate-fade-up">
+        <span class="tag-dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-name animate-fade-up delay-1">
+        Hi, I'm <span class="gradient-text">Keerthi H</span>
+      </h1>
+      <div class="hero-role animate-fade-up delay-2">
+        <span class="role-prefix">I build </span>
+        <span class="typing-wrapper">
+          <span class="typing-text" id="typingText"></span>
+          <span class="cursor-blink">|</span>
+        </span>
+      </div>
+      <p class="hero-desc animate-fade-up delay-3">
+        B.Tech CS Engineering student at CMR University · Passionate about <strong>Software Development</strong>, <strong>Java</strong> & <strong>Building Real-World Apps</strong>
+      </p>
+      <div class="hero-cta animate-fade-up delay-4">
+        <a href="#projects" class="btn btn-primary" id="viewWorkBtn">View My Work</a>
+        <a href="#contact" class="btn btn-ghost" id="contactBtn">Get In Touch</a>
+      </div>
+      <div class="hero-scroll animate-fade-up delay-5">
+        <div class="scroll-indicator">
+          <div class="scroll-line"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-code-card animate-slide-left delay-3">
+      <div class="code-header">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="code-title">Keerthi.java</span>
+      </div>
+      <div class="code-body">
+        <pre><code><span class="kw">public class</span> <span class="cls">Keerthi</span> {
+  <span class="kw">String</span> name <span class="op">=</span> <span class="str">"Keerthi H"</span>;
+  <span class="kw">String</span> location <span class="op">=</span> <span class="str">"Bengaluru, KA"</span>;
+  <span class="kw">String</span> degree <span class="op">=</span> <span class="str">"B.Tech CSE"</span>;
+  
+  <span class="kw">String</span>[] strengths <span class="op">=</span> {
+    <span class="str">"Java"</span>, <span class="str">"Software Dev"</span>,
+    <span class="str">"OOP"</span>, <span class="str">"Problem Solving"</span>
+  };
+  
+  <span class="kw">String</span> <span class="fn">passion</span>() {
+    <span class="kw">return</span> <span class="str">"Build the future"</span>; <span class="op">🚀</span>
+  }
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap reveal">
+          <div class="avatar-glow"></div>
+          <div class="avatar-ring"></div>
+          <div class="avatar-placeholder">
+            <span>KH</span>
+          </div>
+          <div class="avatar-badge">
+            <span>🎓</span> CSE Student
+          </div>
+        </div>
+        <div class="about-text reveal delay-1">
+          <p class="about-highlight">
+            Passionate about <span class="highlight-word">coding</span> and <span class="highlight-word">development</span> with a focus on building technology-driven solutions.
+          </p>
+          <p class="about-body">
+            Strong in <strong>Java</strong> and <strong>Software Development</strong>, with hands-on experience building real-world applications. I enjoy designing clean, efficient code and solving complex problems through well-structured software solutions.
+          </p>
+          <p class="about-body">
+            Currently pursuing my B.Tech in Computer Science Engineering at CMR University, Bengaluru — where I'm deepening my understanding of modern computing concepts and practical development.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item" id="stat1">
+              <span class="stat-num" data-target="2">0</span>+
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item" id="stat2">
+              <span class="stat-num" data-target="3">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-item" id="stat3">
+              <span class="stat-num" data-target="4">0</span>+
+              <span class="stat-label">Tech Skills</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. Skills</span>
+        <h2 class="section-title">What I Know</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">⚙️</span> Technical Skills
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item" data-skill="Java" data-level="90">
+              <div class="skill-info">
+                <span class="skill-icon">☕</span>
+                <span class="skill-name">Java</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item" data-skill="Software Development" data-level="85">
+              <div class="skill-info">
+                <span class="skill-icon">💻</span>
+                <span class="skill-name">Software Development</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item" data-skill="Python" data-level="60">
+              <div class="skill-info">
+                <span class="skill-icon">🐍</span>
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
+            </div>
+            <div class="skill-item" data-skill="Cybersecurity" data-level="45">
+              <div class="skill-info">
+                <span class="skill-icon">🔐</span>
+                <span class="skill-name">Cybersecurity <em style="font-size:0.75em;opacity:0.6">(Learning)</em></span>
+                <span class="skill-pct">45%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="45"></div></div>
+            </div>
+            <div class="skill-item" data-skill="Cloud Computing" data-level="40">
+              <div class="skill-info">
+                <span class="skill-icon">☁️</span>
+                <span class="skill-name">Cloud Computing <em style="font-size:0.75em;opacity:0.6">(Learning)</em></span>
+                <span class="skill-pct">40%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="40"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category reveal delay-1">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">🧠</span> Soft Skills
+          </h3>
+          <div class="soft-skills">
+            <div class="soft-skill-pill" id="pill1">
+              <span>🗣️</span> Communication
+            </div>
+            <div class="soft-skill-pill" id="pill2">
+              <span>🤝</span> Teamwork
+            </div>
+            <div class="soft-skill-pill" id="pill3">
+              <span>🧩</span> Problem Solving
+            </div>
+            <div class="soft-skill-pill" id="pill4">
+              <span>💡</span> Innovation
+            </div>
+            <div class="soft-skill-pill" id="pill5">
+              <span>📚</span> Fast Learner
+            </div>
+            <div class="soft-skill-pill" id="pill6">
+              <span>🎯</span> Goal Oriented
+            </div>
+          </div>
+          <div class="tech-tags">
+            <h3 class="skill-cat-title" style="margin-top:2rem">
+              <span class="cat-icon">🛠️</span> Technologies
+            </h3>
+            <div class="tag-cloud">
+              <span class="tech-tag" id="tech1">Firebase</span>
+              <span class="tech-tag" id="tech2">Gemini AI</span>
+              <span class="tech-tag" id="tech3">Cloud</span>
+              <span class="tech-tag" id="tech4">AI Agents</span>
+              <span class="tech-tag" id="tech5">Linux</span>
+              <span class="tech-tag" id="tech6">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. Projects</span>
+        <h2 class="section-title">What I've Built</h2>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal" id="projectCard1">
+          <div class="project-card-inner">
+            <div class="project-front">
+              <div class="project-num">01</div>
+              <div class="project-icon-wrap">
+                <div class="project-icon">🤖</div>
+              </div>
+              <h3 class="project-title">AI Assistant</h3>
+              <p class="project-desc">An AI-powered knowledge and workflow engine platform that enhances productivity with intelligent automation.</p>
+              <div class="project-tags">
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">AI</span>
+                <span class="project-tag">Automation</span>
+              </div>
+              <div class="project-hover-hint">Hover to explore →</div>
+            </div>
+            <div class="project-back">
+              <h3 class="project-back-title">AI Assistant</h3>
+              <div class="project-detail">
+                <div class="detail-item">
+                  <span class="detail-label">🎯 Objective</span>
+                  <p>Enhance productivity with AI-driven tools for various domains</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">🛠️ Tech Stack</span>
+                  <p>Firebase · AI Agents · Workflow Engine</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">✅ Outcome</span>
+                  <p>Improved efficiency and workflow management using intelligent automation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal delay-1" id="projectCard2">
+          <div class="project-card-inner">
+            <div class="project-front">
+              <div class="project-num">02</div>
+              <div class="project-icon-wrap">
+                <div class="project-icon">🌾</div>
+              </div>
+              <h3 class="project-title">AgriGuard</h3>
+              <p class="project-desc">An AI-powered web application serving as a digital assistant for farmers with crop disease detection and market analysis.</p>
+              <div class="project-tags">
+                <span class="project-tag">Firebase</span>
+                <span class="project-tag">Gemini</span>
+                <span class="project-tag">AgriTech</span>
+              </div>
+              <div class="project-hover-hint">Hover to explore →</div>
+            </div>
+            <div class="project-back">
+              <h3 class="project-back-title">AgriGuard</h3>
+              <div class="project-detail">
+                <div class="detail-item">
+                  <span class="detail-label">🎯 Objective</span>
+                  <p>Provide tools for crop disease detection, market analysis & personalized guidance</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">🛠️ Tech Stack</span>
+                  <p>Firebase · Gemini AI · Web App</p>
+                </div>
+                <div class="detail-item">
+                  <span class="detail-label">✅ Outcome</span>
+                  <p>Enhanced agricultural decision-making and productivity through intelligent automation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="section section-dark" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. Certifications</span>
+        <h2 class="section-title">Achievements</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal" id="cert1">
+          <div class="timeline-marker">
+            <div class="marker-ring"></div>
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="cert-year">2024</div>
+            <h3 class="cert-title">Cybersecurity Awareness</h3>
+            <p class="cert-issuer">
+              <span class="issuer-icon">🔗</span> LinkedIn Learning
+            </p>
+            <div class="cert-badge">🛡️ Security</div>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-1" id="cert2">
+          <div class="timeline-marker">
+            <div class="marker-ring"></div>
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="cert-year">2024</div>
+            <h3 class="cert-title">The Cybersecurity Threat Landscape</h3>
+            <p class="cert-issuer">
+              <span class="issuer-icon">🔗</span> LinkedIn Learning
+            </p>
+            <div class="cert-badge">🔐 Threat Analysis</div>
+          </div>
+        </div>
+        <div class="timeline-item reveal delay-2" id="cert3">
+          <div class="timeline-marker">
+            <div class="marker-ring"></div>
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="cert-year">2025</div>
+            <h3 class="cert-title">Software Engineering</h3>
+            <p class="cert-issuer">
+              <span class="issuer-icon">🏛️</span> Infosys Springboard
+            </p>
+            <div class="cert-badge">💻 Engineering</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05. Education</span>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+      <div class="edu-card reveal" id="eduCard">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-content">
+          <div class="edu-year">2024 — 2028</div>
+          <h3 class="edu-degree">B.Tech in Computer Science Engineering</h3>
+          <p class="edu-institution">CMR University · Bengaluru, Karnataka</p>
+          <p class="edu-desc">Pursuing in-depth knowledge of computer science concepts with a strong focus on Software Engineering, Java, and building practical applications.</p>
+          <div class="edu-tags">
+            <span class="edu-tag">Data Structures</span>
+            <span class="edu-tag">Algorithms</span>
+            <span class="edu-tag">Java</span>
+            <span class="edu-tag">OOP & Design Patterns</span>
+            <span class="edu-tag">Software Engineering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-dark" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06. Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">Have a project idea or want to collaborate? I'd love to hear from you!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card" id="contactEmail">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <span class="contact-label">Email</span>
+              <a href="mailto:keerthih1503@gmail.com" class="contact-value">keerthih1503@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contactPhone">
+            <div class="contact-icon">📱</div>
+            <div class="contact-details">
+              <span class="contact-label">Phone</span>
+              <a href="tel:7411881503" class="contact-value">+91 7411881503</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contactLocation">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Bengaluru, Karnataka</span>
+            </div>
+          </div>
+          <div class="contact-card" id="contactLinkedIn">
+            <div class="contact-icon">💼</div>
+            <div class="contact-details">
+              <span class="contact-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/keerthi-h-a2b1aa32a?" target="_blank" rel="noopener noreferrer" class="contact-value">keerthi-h-a2b1aa32a</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal delay-1">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="senderName">Your Name</label>
+              <input type="text" id="senderName" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="senderEmail">Your Email</label>
+              <input type="email" id="senderEmail" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="messageText">Message</label>
+              <textarea id="messageText" name="message" rows="5" placeholder="Hey Keerthi, I'd love to connect..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Send Message</span> <span class="btn-icon">🚀</span>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✅</div>
+            <h3>Message sent!</h3>
+            <p>Thanks for reaching out. I'll get back to you soon!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <span class="brand-bracket">&lt;</span>KH<span class="brand-bracket">/&gt;</span>
+      </div>
+      <p class="footer-text">Designed & Built with ❤️ by <strong>Keerthi H</strong></p>
+      <p class="footer-copy">© 2026 Keerthi H · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
